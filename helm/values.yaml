@@ -1,3 +1,2 @@
 env:
   APP_VERSION: latest
-  SERVICE_PORT: 3001
