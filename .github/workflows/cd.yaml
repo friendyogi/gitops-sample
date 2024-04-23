@@ -25,7 +25,7 @@ jobs:
           password: ${{ env.DOCKERHUB_KEY }}
 
       - name: Go to app home
-	run: cd helm-demo/app/
+        run: cd helm-demo/app/
 
       - name: Build Docker image
         run: docker build -t ${{ env.DOCKERHUB_USERNAME }}/${{ env.IMAGE_NAME }}:${{ github.sha }} .
